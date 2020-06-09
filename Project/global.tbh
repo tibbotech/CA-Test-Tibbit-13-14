@@ -27,8 +27,8 @@ const CR_LF=chr(10)+chr(13)
 
 
 'INCLUDES------------------------------------------------------------
-include "super_i2c.tbh"
-include "ssi.tbh"
+include "super_i2c\trunk\super_i2c.tbh"
+include "ssi\trunk\ssi.tbh"
 include "tbt13.tbh"
 include "tbt14.tbh"
 
