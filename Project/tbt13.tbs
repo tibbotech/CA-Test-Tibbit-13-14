@@ -40,11 +40,7 @@ function tbt13_init(use_ssi as no_yes) as ok_ng
 	if i2c_num_tbt13<4 then
 		ssi.channel=i2c_num_tbt13
 		ssi.enabled=NO
-		#IF PLATFORM_ID=TPP2WG2 OR PLATFORM_ID=TPP3WG2
-			ssi.baudrate=3
-		#ELIF PLATFORM_ID=TPP2W OR PLATFORM_ID=TPP3W
-			ssi.baudrate=1
-		#ENDIF
+		ssi.baudrate=PL_SSI_BAUDRATES_400kHz
 		ssi.clkmap=TBT13_CLK_PIN
 		ssi.dimap=TBT13_DATA_PIN
 		ssi.domap=TBT13_DATA_PIN
